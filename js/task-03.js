@@ -13,6 +13,26 @@ const images = [
   },
 ];
 
+const galleryStyle = document.createElement("style");
+galleryStyle.textContent = `
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+  }
+
+  .gallery-item {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust item width */
+    margin: 10px; /* Adjust spacing between items */
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: auto;
+  }
+`;
+document.head.appendChild(galleryStyle);
+
 const galleryList = document.querySelector(".gallery");
 let galleryHTML = "";
 
