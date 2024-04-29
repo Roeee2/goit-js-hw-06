@@ -19,6 +19,7 @@ galleryStyle.textContent = `
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    list-style: none;
   }
 
   .gallery-item {
