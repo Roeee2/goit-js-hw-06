@@ -18,12 +18,12 @@ galleryStyle.textContent = `
   .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Adjust as needed */
+    justify-content: space-around;
   }
 
   .gallery-item {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust item width */
-    margin: 10px; /* Adjust spacing between items */
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px; 
   }
 
   .gallery-image {
