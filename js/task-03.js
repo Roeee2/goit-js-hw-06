@@ -16,6 +16,8 @@ const images = [
 const galleryStyle = document.createElement("style");
 galleryStyle.textContent = `
   .gallery {
+    background: linear-gradient(to bottom, #818589, #5472d3);
+    padding: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -23,13 +25,15 @@ galleryStyle.textContent = `
   }
 
   .gallery-item {
+    border: 2px dotted #000000;
+    padding: 10px;
     flex: 0 0 calc(33.33% - 20px);
     margin: 10px; 
   }
 
   .gallery-image {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 `;
 document.head.appendChild(galleryStyle);
